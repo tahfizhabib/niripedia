@@ -1,0 +1,56 @@
+name: Wrong or outdated step
+description: A command fails, a package was renamed, or a step no longer works.
+title: "[Step]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. A few details make it much easier to reproduce. For a conduct problem, see the Code of Conduct. For a command that could harm a system, see SECURITY.md.
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: The heading of the section where this happens.
+      placeholder: Niri, step 4. Set up your display
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The exact command you ran and the exact error or result. Paste text, not a screenshot, when you can.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What the guide says should happen.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: A fix, if you know one
+      description: The command or wording that worked for you.
+    validations:
+      required: false
+  - type: textarea
+    id: versions
+    attributes:
+      label: Package versions
+      description: The output of `pacman -Q niri` plus any package the step uses. Add the date you ran the step.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and the Troubleshooting section.
+          required: true
+        - label: I ran the step as written.
+          required: true
