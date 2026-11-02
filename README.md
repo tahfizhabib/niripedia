@@ -1,28 +1,14 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/distro-Arch%20Linux-1793D1" alt="Arch Linux">
-  <img src="https://img.shields.io/badge/compositor-Niri-5B7FFF" alt="Niri">
-  <img src="https://img.shields.io/badge/shell-Noctalia-8A2BE2" alt="Noctalia Shell">
-  <img src="https://img.shields.io/badge/login-SDDM-3DDC84" alt="SDDM">
-  <img src="https://img.shields.io/badge/setup-manual-lightgrey" alt="Manual setup">
-</p>
-
 # Niripedia
 
-Niripedia is the guide to Nirvic, my daily Arch Linux setup, and it shows how I get from the Arch ISO to a working Niri desktop. You install Arch with the official installer, add Niri and a shell on top, and finish with the fonts, icons and apps I use every day. Everything is done by hand for now. My full dotfiles aren't finished, and I'd rather keep the system clean and easy to change than automate something half done.
+Niripedia is my old Arch Linux setup with a basic Niri desktop, and it shows how I get from the Arch ISO to a working Niri session. You install Arch with the official installer, add Niri and a shell on top, and finish with the fonts, icons and apps I use every day. Everything is done by hand for now. My full dotfiles aren't finished, and I'd rather keep the system clean and easy to change than automate something half done.
 
-A small dotfiles set called **niriha** is the lightweight version of this setup. Use it as a temporary environment or a starting point before moving to the full Nirvic configuration.
+A small dotfiles set called **niriha** is the lightweight version of this setup. Use it as a temporary environment or a starting point.
 
 This is a personal setup, not a distribution. Monitor names, package choices and paths are mine, so change them to fit your machine. The sections up to [Niri](#niri) go in order, because each one needs the one before it. After that every section stands on its own, so skip the ones you don't use.
 
 This guide has no connection to Arch Linux, Niri, Noctalia or any other project it mentions. None of them endorse it, and none of them wrote it.
 
-[Install Arch](#install-arch) | [Set up Niri](#niri) | [Troubleshooting](#troubleshooting)
-
-> [!IMPORTANT]
-> `archinstall` can erase a whole disk. Back up anything you care about before you start, and read the disk step twice.
-
-> [!WARNING]
-> The Noctalia in this guide is the old shell, Noctalia v4. A newer Noctalia has been released since, and its install and setup steps differ. Check the [Noctalia documentation](https://docs.noctalia.dev) before you follow the [Noctalia Shell](#noctalia-shell) section, and don't assume the commands here still apply to the new version.
+[Arch Installation](#install-arch) | [Set up Niri](#niri) | [Troubleshooting](#troubleshooting)
 
 ## Contents
 
